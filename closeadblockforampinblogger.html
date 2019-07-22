@@ -1,0 +1,46 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<style>
+/* Notifikasi Adblocker Adsense */
+#keep-ads{padding:0;position:fixed;bottom:0;opacity:0;height:auto;transition:all .6s cubic-bezier(.25,.8,.25,1);-webkit-transform:translateZ(0);transform:translateZ(0);backface-visibility:hidden;transition:all .2s ease-in-out,visibility 0s;transform-origin:bottom center;}
+.keep-adsme{background:#e74c3c;color:#fff;position:absolute;text-align:center;padding:0;margin:auto;top:30%;left:0;right:0;font-size:1.2rem;line-height:1.5;max-width:930px;box-shadow:0 0 50px rgba(0,0,0,0.25);transition:all .6s cubic-bezier(.25,.8,.25,1);overflow:hidden}
+.keep-adsme:hover{box-shadow:0 0 20px rgba(0,0,0,0.15);}
+.keep-adsme h4{background:#d04537;color:#fff;padding:15px 25px;font-size:2.2rem;margin:0 auto;border-bottom:1px solid rgba(0,0,0,0.1);}
+.keep-me{border-top:1px solid rgba(255,255,255,0.1);padding:10px 30px 50px 30px}
+#keep-ads p{margin:0}
+#keep-ads a{color:#ffe88b;}#keep-ads a:hover{color:#ffe88b;text-decoration:underline}
+#keep-ads.show{left:0;top:0;right:0;z-index:1000;pointer-events:auto;opacity:1;visibility:visible;transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);animation:wobble .7s;opacity:1;}
+.close-keep-ads{visibility:hidden;opacity:0;color:#ffe88b;text-align:center;position:absolute;bottom:10px;right:10px;font-size:32px;cursor:pointer;width:30px;height:30px;line-height:30px;border-radius:100%;transition:all .6s cubic-bezier(.25,.8,.25,1);transform:translate(0,50px);}
+.close-keep-ads:hover{color:#fff;transform:scale(1.0);}
+.keep-adsme:hover .close-keep-ads{visibility:visible;opacity:1;color:#ffe88b;transform:translate(0,0);}
+#keep-ads p span {font-family:fontawesome;font-size:5rem;}
+@keyframes wobble{0%{transform:scale(0) rotate(-54deg) translatey(40px)}45%{transform:scale(1.1) rotate(20deg) translatey(0px)}60%{transform:scale(1) rotate(-15deg) translatey(0px)}77%{transform:scale(1) rotate(10deg) translatey(0px)}100%{transform:translatey(0)}}
+
+</style>
+</head>
+<body>
+<script type='text/javascript'>
+//<![CDATA[
+// Notifikasi Adblocker Adsense
+function hidekeep(){document.getElementById("keep-ads").style.display="none"}setTimeout(function(){var e=document.getElementById("keep-ads"),t=document.querySelectorAll("ins.adsbygoogle");0===$(t).height()&&(e.className="show")},2e3);
+//]]>
+</script>
+<div id='keep-ads'>
+<div class='keep-adsme'>
+  <p><h4>Adblock Detected</h4></p>
+  <p><span><i aria-hidden='true' class='fa fa-exclamation-triangle'/></span></p>
+  <p>Like this blog? Keep us running by whitelisting this blog in your ad blocker</p>
+  <p>This is <a href='https://www.atomstudy.com/p/whitelisting-arlina-design.html' target='_blank' title='Show me how'>how to whitelisting</a> this blog in your ad blocker</p>
+  <p>Thank you</p>
+<div class='close-keep-ads' onclick='hidekeep()'>&#215;</div>
+</div>
+</div>
+
+
+</body>
+</html>
